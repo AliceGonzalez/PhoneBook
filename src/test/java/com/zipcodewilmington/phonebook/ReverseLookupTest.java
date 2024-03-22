@@ -14,7 +14,7 @@ public class ReverseLookupTest {
         Assert.assertTrue(phoneBook.hasEntry(expectedName, phoneNumber));
 
         // when
-        String actualName = phoneBook.reverseLookup(phoneNumber);
+        String actualName = String.valueOf(phoneBook.reverseLookup(phoneNumber));
 
         // then
         Assert.assertEquals(expectedName, actualName);
@@ -30,7 +30,7 @@ public class ReverseLookupTest {
         Assert.assertTrue(phoneBook.hasEntry(expectedName, phoneNumber));
 
         // when
-        String actualName = phoneBook.reverseLookup(phoneNumber);
+        String actualName = String.valueOf(phoneBook.reverseLookup(phoneNumber));
 
         // then
         Assert.assertEquals(expectedName, actualName);
@@ -47,7 +47,7 @@ public class ReverseLookupTest {
         Assert.assertTrue(phoneBook.hasEntry(expectedName, phoneNumber));
 
         // when
-        String actualName = phoneBook.reverseLookup(phoneNumber);
+        String actualName = String.valueOf(phoneBook.reverseLookup(phoneNumber));
 
         // then
         Assert.assertEquals(expectedName, actualName);
